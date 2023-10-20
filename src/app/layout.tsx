@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { PropsWithChildren } from 'react'
-import '@/assets/globals.css'
 import { PWALifeCycle } from '@/components/lifecycle';
+import '@/assets/globals.css'
 
 const APP_NAME = "PWA App";
 const APP_DEFAULT_TITLE = "My Awesome PWA App";
@@ -23,6 +23,25 @@ export const metadata: Metadata = {
     title: APP_DEFAULT_TITLE,
     // startUpImage: [],
   },
+  icons: [
+    {
+      rel: 'apple-touch-icon',
+      sizes: '180x180',
+      url: '/icons/apple-touch-icon.png',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '32x32',
+      url: '/icons/favicon-32x32.png',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '16x16',
+      url: '/icons/favicon-16x16.png',
+    },
+  ],
   formatDetection: {
     telephone: false,
   },

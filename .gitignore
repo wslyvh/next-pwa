@@ -34,5 +34,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-**/public/workbox-*.js
+**/public/workbox-**
 **/public/sw.js
+**/public/sw**
